@@ -1,0 +1,88 @@
+<!-- http://bl.ocks.org/norrs/2883411 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://d3js.org/d3.v2.js"></script>
+    <script type="text/javascript" src="D3_Graph_Forced.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style type="text/css">
+      .link { stroke: #ccc; }
+      .nodetext { pointer-events: none; font: 10px sans-serif; }
+
+      /* Fill Webpage Background 
+      body {
+        background-color: #141111;
+        color: rgb(30, 175, 90);
+      } */
+
+      .option {
+        z-index: 0;
+      }
+
+      .GraphArea {
+        z-index: 1;
+      }
+
+      /* Center <table> tools-table */
+      .tools-table {
+        /* margin: 0 auto; */
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* make <td> width-25-px, with forced with 25 px width */
+      .width-25-px {
+        width: 25px;
+        min-width: 25px;
+        max-width: 25px;
+      }
+
+    </style>
+  </head>
+
+  <body onload="DrawGraph('space-engineers.json')">
+
+    <div id="option">
+      <input name="button0" type="button" class="button" value="Default Walkthrough" onclick="DrawGraph('space-engineers.json')" />
+      <!-- <input name="button2" type="button" class="button" value="Bridges are Nodes" onclick="DrawGraph('example2.json')" /> -->
+      <!--
+      <input name="button1" type="button" class="button" value="Directed, Bridges are Edges" onclick="DrawGraph('example3.json')" />
+      -->
+    </div>
+    
+    <hr>
+    <!-- Project Title -- if desired -->
+    <h2>Space Engineers Walkthrough</h2>
+    <div id="GraphArea"></div>
+
+    <u>To zoom:</u> hover an icon, then use mouse wheel up/down.<br>
+    <b>Note 1:</b> IF the image starts following your cursor, then left click on the screen.
+
+    <hr>
+    <div id="div_tooltip"></div>
+
+    <hr>
+    <div id="tools">
+      <table class="tools-table">
+        <tr>
+          <td>
+            <a href="./RBGT/01_Builder/" target="_blank">
+              GXL Builder
+            </a>
+          </td>
+          <td class="width-25-px"></td>
+          <td>
+            <a href="./RBGT/02_Stats/" target="_blank">
+              GXL Stats
+            </a>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+</body>
+
+</html>
+
+<!--  var IconLink="https://github.com/favicon.ico";  -->

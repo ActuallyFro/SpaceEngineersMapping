@@ -1,0 +1,43 @@
+{
+    "directed": false,
+    "graph": {
+        "edge_default": {},
+        "node_default": {
+            "description": "MISSING DESCRIPTION",
+            "name": "NaN"
+        }
+    },
+    "links": [
+        {
+            "id": "Link Start to Strategies",
+            "source": "start_node",
+            "target": "strategies"
+        },
+        {
+            "id": "Link Sunken Ship to Strategies",
+            "source": "strategies",
+            "target": "strategy_01_sunken"
+        }
+    ],
+    "multigraph": false,
+    "nodes": [
+        {
+            "description": "\n        <br>\n        My Playthrough\n      ",
+            "group": 0,
+            "id": "start_node",
+            "name": "Space Engineers"
+        },
+        {
+            "description": "\n        <br>\n        My Playthrough\n      ",
+            "group": 0,
+            "id": "strategies",
+            "name": "Strategies"
+        },
+        {
+            "description": "\n        <br>\n        My Playthrough\n      ",
+            "group": 0,
+            "id": "strategy_01_sunken",
+            "name": "Sunken Ship"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+     http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+
+  <!-- Attribute Keys -->
+  <key attr.name="name" attr.type="string" for="node" id="nameNode"><default>NaN</default></key>
+  <key attr.name="description" attr.type="string" for="node" id="descriptionNode"><default>MISSING DESCRIPTION</default></key>
+
+  <graph id="Space Engineers Walkthrough Map" edgedefault="undirected">
+  <!-- Nodes -->
+    <node id="start_node">
+      <data key="nameNode">Space Engineers</data>
+      <data key="descriptionNode"><![CDATA[
+        <br>
+        My Playthrough
+      ]]></data>
+    </node>
+
+    <node id="strategies">
+      <data key="nameNode">Strategies</data>
+      <data key="descriptionNode"><![CDATA[
+        <br>
+        My Playthrough
+      ]]></data>
+    </node>
+
+
+    <node id="strategy_01_sunken">
+      <data key="nameNode">Sunken Ship</data>
+      <data key="descriptionNode"><![CDATA[
+        <br>
+        My Playthrough
+      ]]></data>
+    </node>
+
+  <!-- Edges -->
+    <edge id="Link Start to Strategies" source="start_node" target="strategies"/> 
+    <edge id="Link Sunken Ship to Strategies" source="strategy_01_sunken" target="strategies"/> 
+  </graph>
+</graphml>
