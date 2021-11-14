@@ -152,8 +152,8 @@ function DrawGraph(name_of_json){
       })
       .attr("x", "-8px")
       .attr("y", "-8px")
-      .attr("width", "64px")
-      .attr("height", "64px")
+      .attr("width", "128px")
+      .attr("height", "128px")
       .on("mouseover", mouseover)     //|Tool tip check on hover/etc.
       .on("mousemove", mousemove)     //|
       .on("mouseleave", mouseleave);  //|
