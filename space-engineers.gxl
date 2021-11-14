@@ -18,6 +18,14 @@
       ]]></data>
     </node>
 
+    <node id="protips">
+      <data key="nameNode">Pro Tips</data>
+      <data key="descriptionNode"><![CDATA[
+        <br>
+        This captures some could to knows...
+      ]]></data>
+    </node>
+
     <node id="strategies">
       <data key="nameNode">Strategies</data>
       <data key="descriptionNode"><![CDATA[
@@ -30,11 +38,54 @@
     <node id="strategy_01_sunken">
       <data key="nameNode">Sunken Ship</data>
       <data key="descriptionNode"><![CDATA[
-        <br>
-        My Playthrough
+<ul>
+<li>Start: Earth-like</li>
+<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>
+<li>Go to your drop</li>
+<li></li>
+<li></li>
+<li></li>
+</ul>        
       ]]></data>
     </node>
 
+
+
+    <node id="protip_01_machinery">
+      <data key="nameNode">Machinery</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>Start: Earth-like</li>
+<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>
+<li>Go to your drop</li>
+<li></li>
+<li></li>
+<li></li>
+</ul>        
+      ]]></data>
+    </node>
+
+    <node id="protip_02_movement">
+      <data key="nameNode">Movement</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>
+<li></li>
+<li></li>
+</ul>        
+      ]]></data>
+    </node>
+
+    <node id="protip_01_vehicles">
+      <data key="nameNode">Vehicles</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>NEVER use 1x1 for "real" vehicles</li>
+<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips)</li>
+<li></li>
+</ul>        
+      ]]></data>
+    </node>
   <!-- Edges -->
     <edge id="Link Start to Strategies" source="start_node" target="strategies"/> 
     <edge id="Link Sunken Ship to Strategies" source="strategy_01_sunken" target="strategies"/> 
