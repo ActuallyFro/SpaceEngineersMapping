@@ -49,8 +49,18 @@
       ]]></data>
     </node>
 
+    <node id="protip_01_movement">
+      <data key="nameNode">Movement</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>
+<li></li>
+<li></li>
+</ul>        
+      ]]></data>
+    </node>
 
-    <node id="protip_01_machinery">
+    <node id="protip_02_machinery">
       <data key="nameNode">Machinery</data>
       <data key="descriptionNode"><![CDATA[
 <ul>
@@ -64,18 +74,7 @@
       ]]></data>
     </node>
 
-    <node id="protip_02_movement">
-      <data key="nameNode">Movement</data>
-      <data key="descriptionNode"><![CDATA[
-<ul>
-<li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>
-<li></li>
-<li></li>
-</ul>        
-      ]]></data>
-    </node>
-
-    <node id="protip_01_vehicles">
+    <node id="protip_03_vehicles">
       <data key="nameNode">Vehicles</data>
       <data key="descriptionNode"><![CDATA[
 <ul>
@@ -88,5 +87,10 @@
   <!-- Edges -->
     <edge id="Link Start to Strategies" source="start_node" target="strategies"/> 
     <edge id="Link Sunken Ship to Strategies" source="strategy_01_sunken" target="strategies"/> 
+    <edge id="Link Start to Pro Tips" source="start_node" target="protips"/>
+    <edge id="Link Pro Tips to Movement" source="protips" target="protip_01_movement"/>
+    <edge id="Link Pro Tips to Machinery" source="protips" target="protip_02_machinery"/>
+    <edge id="Link Pro Tips to Vehicles" source="protips" target="protip_03_vehicles"/>
+
   </graph>
 </graphml>

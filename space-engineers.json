@@ -14,6 +14,26 @@
             "target": "strategies"
         },
         {
+            "id": "Link Start to Pro Tips",
+            "source": "start_node",
+            "target": "protips"
+        },
+        {
+            "id": "Link Pro Tips to Movement",
+            "source": "protips",
+            "target": "protip_01_movement"
+        },
+        {
+            "id": "Link Pro Tips to Machinery",
+            "source": "protips",
+            "target": "protip_02_machinery"
+        },
+        {
+            "id": "Link Pro Tips to Vehicles",
+            "source": "protips",
+            "target": "protip_03_vehicles"
+        },
+        {
             "id": "Link Sunken Ship to Strategies",
             "source": "strategies",
             "target": "strategy_01_sunken"
@@ -28,16 +48,40 @@
             "name": "Space Engineers"
         },
         {
+            "description": "\n        <br>\n        This captures some could to knows...\n      ",
+            "group": 1,
+            "id": "protips",
+            "name": "Pro Tips"
+        },
+        {
             "description": "\n        <br>\n        My Playthrough\n      ",
             "group": 0,
             "id": "strategies",
             "name": "Strategies"
         },
         {
-            "description": "\n        <br>\n        My Playthrough\n      ",
+            "description": "\n<ul>\n<li>Start: Earth-like</li>\n<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>\n<li>Go to your drop</li>\n<li></li>\n<li></li>\n<li></li>\n</ul>        \n      ",
             "group": 0,
             "id": "strategy_01_sunken",
             "name": "Sunken Ship"
+        },
+        {
+            "description": "\n<ul>\n<li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>\n<li></li>\n<li></li>\n</ul>        \n      ",
+            "group": 1,
+            "id": "protip_01_movement",
+            "name": "Movement"
+        },
+        {
+            "description": "\n<ul>\n<li>Start: Earth-like</li>\n<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>\n<li>Go to your drop</li>\n<li></li>\n<li></li>\n<li></li>\n</ul>        \n      ",
+            "group": 1,
+            "id": "protip_02_machinery",
+            "name": "Machinery"
+        },
+        {
+            "description": "\n<ul>\n<li>NEVER use 1x1 for \"real\" vehicles</li>\n<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips) [50 grids!]</li>\n<li></li>\n</ul>        \n      ",
+            "group": 1,
+            "id": "protip_03_vehicles",
+            "name": "Vehicles"
         }
     ]
 }

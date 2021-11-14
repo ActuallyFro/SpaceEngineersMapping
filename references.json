@@ -21,7 +21,27 @@
       "name":"Sunken Ship",
       "category":"stratgey",
       "IconLink":"https://www.spaceengineerswiki.com/images/2/21/Parachute_Hatch_Icon.png"
-    }
+    },
+    {
+      "name":"Pro Tips",
+      "category":"protips",
+      "IconLink":"https://www.spaceengineerswiki.com/images/e/ee/Handbreak.png"
+    },
+    {
+      "name":"Movement",
+      "category":"protips",
+      "IconLink":"https://www.spaceengineerswiki.com/images/d/dc/Welder_%28Tool%29_Icon.png"
+    },
+    {
+      "name":"Machinery",
+      "category":"protips",
+      "IconLink":"https://www.spaceengineerswiki.com/images/4/4f/Material_Icon.png"
+    },
+    {
+      "name":"Vehicles",
+      "category":"protips",
+      "IconLink":"https://www.spaceengineerswiki.com/images/4/47/Passenger_Seat_Icon.png"
+    }    
   ],
   "unsorted-01": "https://www.spaceengineerswiki.com/images/e/ee/Handbreak.png",
   "unsorted-02": "https://www.spaceengineerswiki.com/images/2/21/Parachute_Hatch_Icon.png",
@@ -35,8 +55,3 @@
   "unsorted-10": "",
   "unsorted-11": ""
 }
-
-
-
-
-
