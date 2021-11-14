@@ -132,7 +132,7 @@ function DrawGraph(name_of_json){
     $.getJSON("references.json", function(jsonData) { //Async!!!!  
       // var references;
       loadedResourcesJSONData = jsonData;
-      console.log(json); // this will show the info it in firebug console
+      //console.log(json); // this will show the info it in firebug console
 
 
       node.append("svg:image").attr("class", "circle").attr("xlink:href", function (d){
@@ -140,9 +140,9 @@ function DrawGraph(name_of_json){
       
         //iterate over icons. See if d.name == name of iconKeys
         for (var i = 0; i < loadedResourcesJSONData.icons.length; i++) {
-          console.log("Looking for ("+d.name+")");
+          //console.log("Looking for ("+d.name+")");
           if (d.name == loadedResourcesJSONData.icons[i].name) {
-            console.log("Found Match for ("+d.name+") at: "+loadedResourcesJSONData.icons[i]);
+            //console.log("Found Match for ("+d.name+") at: "+loadedResourcesJSONData.icons[i]);
             IconLink = loadedResourcesJSONData.icons[i].IconLink;
             break;
           }
@@ -150,10 +150,10 @@ function DrawGraph(name_of_json){
 
         return IconLink;
       })
-      .attr("x", "-8px")
-      .attr("y", "-8px")
-      .attr("width", "48px")
-      .attr("height", "48px")
+      .attr("x", "-20px")
+      .attr("y", "-20px")
+      .attr("width", "40px")
+      .attr("height", "40px")
       .on("mouseover", mouseover)     //|Tool tip check on hover/etc.
       .on("mousemove", mousemove)     //|
       .on("mouseleave", mouseleave);  //|
@@ -162,9 +162,9 @@ function DrawGraph(name_of_json){
     node
       .append("svg:text")
       .attr("class", "nodetext")
-      .attr("dx", 12)
-      .attr("font-weight", 900)
+      .attr("dx", 32)
       .attr("dy", ".75em")
+      .attr("font-weight", 1000)
       .text(function(d) { return d.name });
 
     node.filter(function(d) { return !d.name; }).remove(); //May need: d.name == "" check        

@@ -19,8 +19,13 @@
     },
     {
       "name":"Sunken Ship",
-      "category":"stratgey",
+      "category":"strategy",
       "IconLink":"https://www.spaceengineerswiki.com/images/2/21/Parachute_Hatch_Icon.png"
+    },
+    {
+      "name":"Minimum Viable Product - Drill Rover",
+      "category":"strategy",
+      "IconLink":"https://www.spaceengineerswiki.com/images/d/d7/Wheel_Suspension_3x3_Icon.png"
     },
     {
       "name":"Pro Tips",

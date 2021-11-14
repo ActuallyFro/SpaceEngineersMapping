@@ -49,6 +49,19 @@
       ]]></data>
     </node>
 
+    <node id="strategy_02_MVPRover">
+      <data key="nameNode">Minimum Viable Product - Drill Rover</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>This rover is designed to be the SIMPLEST, buildable forward/back drill rover</li>
+<li>Main goal: be able to drill forward and back with a single drill</li>
+<li></li>
+<li></li>
+<li></li>
+</ul>        
+      ]]></data>
+    </node>
+
     <node id="protip_01_movement">
       <data key="nameNode">Movement</data>
       <data key="descriptionNode"><![CDATA[
@@ -87,10 +100,13 @@
   <!-- Edges -->
     <edge id="Link Start to Strategies" source="start_node" target="strategies"/> 
     <edge id="Link Sunken Ship to Strategies" source="strategy_01_sunken" target="strategies"/> 
+    <edge id="Link MVP Drill Rover to Strategies" source="strategy_02_MVPRover" target="strategies"/> 
     <edge id="Link Start to Pro Tips" source="start_node" target="protips"/>
     <edge id="Link Pro Tips to Movement" source="protips" target="protip_01_movement"/>
     <edge id="Link Pro Tips to Machinery" source="protips" target="protip_02_machinery"/>
     <edge id="Link Pro Tips to Vehicles" source="protips" target="protip_03_vehicles"/>
+
+
 
   </graph>
 </graphml>

@@ -37,6 +37,11 @@
             "id": "Link Sunken Ship to Strategies",
             "source": "strategies",
             "target": "strategy_01_sunken"
+        },
+        {
+            "id": "Link MVP Drill Rover to Strategies",
+            "source": "strategies",
+            "target": "strategy_02_MVPRover"
         }
     ],
     "multigraph": false,
@@ -64,6 +69,12 @@
             "group": 0,
             "id": "strategy_01_sunken",
             "name": "Sunken Ship"
+        },
+        {
+            "description": "\n<ul>\n<li>This rover is designed to be the SIMPLEST, buildable forward/back drill rover</li>\n<li>Main goal: be able to drill forward and back with a single drill</li>\n<li></li>\n<li></li>\n<li></li>\n</ul>        \n      ",
+            "group": 0,
+            "id": "strategy_02_MVPRover",
+            "name": "Minimum Viable Product - Drill Rover"
         },
         {
             "description": "\n<ul>\n<li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>\n<li></li>\n<li></li>\n</ul>        \n      ",
