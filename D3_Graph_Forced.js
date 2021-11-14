@@ -152,8 +152,8 @@ function DrawGraph(name_of_json){
       })
       .attr("x", "-8px")
       .attr("y", "-8px")
-      .attr("width", "128px")
-      .attr("height", "128px")
+      .attr("width", "48px")
+      .attr("height", "48px")
       .on("mouseover", mouseover)     //|Tool tip check on hover/etc.
       .on("mousemove", mousemove)     //|
       .on("mouseleave", mouseleave);  //|
@@ -163,7 +163,8 @@ function DrawGraph(name_of_json){
       .append("svg:text")
       .attr("class", "nodetext")
       .attr("dx", 12)
-      .attr("dy", ".35em")
+      .attr("font-weight", 900)
+      .attr("dy", ".75em")
       .text(function(d) { return d.name });
 
     node.filter(function(d) { return !d.name; }).remove(); //May need: d.name == "" check        
