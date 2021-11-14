@@ -50,7 +50,6 @@
     </node>
 
 
-
     <node id="protip_01_machinery">
       <data key="nameNode">Machinery</data>
       <data key="descriptionNode"><![CDATA[
@@ -81,7 +80,7 @@
       <data key="descriptionNode"><![CDATA[
 <ul>
 <li>NEVER use 1x1 for "real" vehicles</li>
-<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips)</li>
+<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips) [50 grids!]</li>
 <li></li>
 </ul>        
       ]]></data>
