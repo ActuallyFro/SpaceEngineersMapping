@@ -29,9 +29,9 @@
             "target": "strategy_01_sunken"
         },
         {
-            "id": "Link MVP Drill Rover to Builds",
+            "id": "Link MVP Drill Rover to Rover",
             "source": "build_00_MVPRover",
-            "target": "builds"
+            "target": "builds_rovers"
         },
         {
             "id": "Link Pro Tips to Movement",
@@ -49,14 +49,29 @@
             "target": "protip_03_vehicles"
         },
         {
-            "id": "Link Ant-Tony to Builds",
+            "id": "Link Sorters to Machinery",
+            "source": "protip_02_machinery",
+            "target": "protip_02_machinery_01_sorters"
+        },
+        {
+            "id": "Link Rovers to Builds",
             "source": "builds",
+            "target": "builds_rovers"
+        },
+        {
+            "id": "Link Ant-Tony to Rovers",
+            "source": "builds_rovers",
             "target": "build_01_Ant-Tony"
         },
         {
             "id": "Link Hippo to Builds",
-            "source": "builds",
+            "source": "builds_rovers",
             "target": "build_03_Hippo"
+        },
+        {
+            "id": "Link Truffle Hog to Builds",
+            "source": "builds_rovers",
+            "target": "build_05_TruffleHog"
         },
         {
             "id": "Link Rhino to Ant-Tony",
@@ -67,6 +82,11 @@
             "id": "Link Super Hippo to Hippo",
             "source": "build_03_Hippo",
             "target": "build_04_SuperHippo"
+        },
+        {
+            "id": "Link Super Truffle Hog to Truffle Hog",
+            "source": "build_05_TruffleHog",
+            "target": "build_06_SuperTruffleHog"
         }
     ],
     "multigraph": false,
@@ -91,39 +111,51 @@
         },
         {
             "description": "\n<ul>\n<li>This rover is designed to be the SIMPLEST, buildable forward/back drill rover</li>\n<li>Main goal: be able to drill forward and back with a single drill</li>\n<li>Crtical limitation: The medium cargo container(s) greatly limits ability to collect ores for processing </li>\n<li></li>\n<li></li>\n</ul>        \n      ",
-            "group": 1,
+            "group": 2,
             "id": "build_00_MVPRover",
             "name": "Minimum Viable Product - Drill Rover"
         },
         {
-            "description": "\n        <br>\n        This captures some could to knows...\n      ",
-            "group": 2,
+            "description": "\n        <br>\n        These are general tips to consider when playing.\n      ",
+            "group": 3,
             "id": "protips",
             "name": "Pro Tips"
         },
         {
             "description": "\n<ul>\n<li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>\n<li></li>\n<li></li>\n</ul>        \n      ",
-            "group": 2,
+            "group": 3,
             "id": "protip_01_movement",
             "name": "Movement"
         },
         {
             "description": "\n<ul>\n<li>Start: Earth-like</li>\n<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>\n<li>Go to your drop</li>\n<li></li>\n<li></li>\n<li></li>\n</ul>        \n      ",
-            "group": 2,
+            "group": 3,
             "id": "protip_02_machinery",
             "name": "Machinery"
         },
         {
-            "description": "\n<ul>\n<li>NEVER use 1x1 for \"real\" vehicles</li>\n<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips) [50 grids!]</li>\n<li>Consider \"side spikes\" (e.g., place two ramps back to back, beyond width of tires, to force rolling)</li>\n</ul>        \n      ",
-            "group": 2,
+            "description": "\n<ul>\n<li>Attaching to a conveyor system, BEFORE a connector, with \"Drain All\" (applicable items + whitelist) will quickly empty a vehicle</li>\n</ul>        \n      ",
+            "group": 3,
+            "id": "protip_02_machinery_01_sorters",
+            "name": "Sorters"
+        },
+        {
+            "description": "\n<ul>\n<li>NEVER use 1x1 for \"real\" vehicles</li>\n<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips) [50 grids!]</li>\n<li>Consider \"side spikes\" (e.g., place two ramps back to back, beyond width of tires, to force rolling)</li>\n<li></li>\n<li>Control+G will put you into build mode (e.g., you can place/build INSIDE a vehicle, a welder can then construct the object)</li>\n</ul>        \n      ",
+            "group": 3,
             "id": "protip_03_vehicles",
             "name": "Vehicles"
         },
         {
             "description": "\n        Some example builds\n      ",
-            "group": 1,
+            "group": 0,
             "id": "builds",
             "name": "Builds"
+        },
+        {
+            "description": "\n      For all things with wheels!\n      ",
+            "group": 2,
+            "id": "builds_rovers",
+            "name": "Rovers"
         },
         {
             "description": "\n        6-wheeled, ore-detecting rover made from the spare parts of first drop ship.\n      ",
@@ -139,15 +171,27 @@
         },
         {
             "description": "\n        16-wheeled, ore-detecting rover made from the spare parts of first drop ship.\n      ",
-            "group": 3,
+            "group": 2,
             "id": "build_03_Hippo",
             "name": "Hippo"
         },
         {
             "description": "\n        16-wheeled, ore-detecting rover made from the spare parts of first drop ship.\n      ",
-            "group": 3,
+            "group": 2,
             "id": "build_04_SuperHippo",
-            "name": "Hippo"
+            "name": "Super Hippo"
+        },
+        {
+            "description": "\n        <ul>\n        <li>a 6-wheel Rover</li>\n        <li>Leverages the \"rotor bug\" (i.e., attach a LARGE GRID Ore Detector to a Small Grid)</li>\n        <li></li>\n        <li>Add a connector to enable towing by Ant-Tony or Hippo Class Vehicles</li>\n        </ul>        \n      ",
+            "group": 2,
+            "id": "build_05_TruffleHog",
+            "name": "Truffle Hog"
+        },
+        {
+            "description": "\n        <ul>\n        <li>An 8-wheel variant</li>\n        <li>Adds a survival kit</li>\n        <li>+a SECOND Large Cargo Container</li>\n        </ul>\n        <br>\n        This design can be built first up to the 6-wheel portion (i.e., with a projector), then be a simple mod to extend the default Truffle Hog design\n      ",
+            "group": 2,
+            "id": "build_06_SuperTruffleHog",
+            "name": "Super Truffle Hog"
         }
     ]
 }

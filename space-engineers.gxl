@@ -60,7 +60,7 @@
       <data key="nameNode">Pro Tips</data>
       <data key="descriptionNode"><![CDATA[
         <br>
-        This captures some could to knows...
+        These are general tips to consider when playing.
       ]]></data>
     </node>
 
@@ -89,6 +89,16 @@
       ]]></data>
     </node>
 
+    <node id="protip_02_machinery_01_sorters">
+      <data key="nameNode">Sorters</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>Attaching to a conveyor system, BEFORE a connector, with "Drain All" (applicable items + whitelist) will quickly empty a vehicle</li>
+</ul>        
+      ]]></data>
+    </node>
+
+
     <node id="protip_03_vehicles">
       <data key="nameNode">Vehicles</data>
       <data key="descriptionNode"><![CDATA[
@@ -96,6 +106,8 @@
 <li>NEVER use 1x1 for "real" vehicles</li>
 <li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips) [50 grids!]</li>
 <li>Consider "side spikes" (e.g., place two ramps back to back, beyond width of tires, to force rolling)</li>
+<li></li>
+<li>Control+G will put you into build mode (e.g., you can place/build INSIDE a vehicle, a welder can then construct the object)</li>
 </ul>        
       ]]></data>
     </node>
@@ -105,6 +117,13 @@
       <data key="nameNode">Builds</data>
       <data key="descriptionNode"><![CDATA[
         Some example builds
+      ]]></data>
+    </node>
+
+    <node id="builds_rovers">
+      <data key="nameNode">Rovers</data>
+      <data key="descriptionNode"><![CDATA[
+      For all things with wheels!
       ]]></data>
     </node>
 
@@ -130,9 +149,34 @@
     </node>
 
     <node id="build_04_SuperHippo">
-      <data key="nameNode">Hippo</data>
+      <data key="nameNode">Super Hippo</data>
       <data key="descriptionNode"><![CDATA[
         16-wheeled, ore-detecting rover made from the spare parts of first drop ship.
+      ]]></data>
+    </node>
+
+    <node id="build_05_TruffleHog">
+      <data key="nameNode">Truffle Hog</data>
+      <data key="descriptionNode"><![CDATA[
+        <ul>
+        <li>a 6-wheel Rover</li>
+        <li>Leverages the "rotor bug" (i.e., attach a LARGE GRID Ore Detector to a Small Grid)</li>
+        <li></li>
+        <li>Add a connector to enable towing by Ant-Tony or Hippo Class Vehicles</li>
+        </ul>        
+      ]]></data>
+    </node>
+
+    <node id="build_06_SuperTruffleHog">
+      <data key="nameNode">Super Truffle Hog</data>
+      <data key="descriptionNode"><![CDATA[
+        <ul>
+        <li>An 8-wheel variant</li>
+        <li>Adds a survival kit</li>
+        <li>+a SECOND Large Cargo Container</li>
+        </ul>
+        <br>
+        This design can be built first up to the 6-wheel portion (i.e., with a projector), then be a simple mod to extend the default Truffle Hog design
       ]]></data>
     </node>
 
@@ -141,19 +185,26 @@
     <edge id="Link Sunken Ship to Strategies" source="strategy_01_sunken" target="strategies"/> 
 
     <edge id="Link Start to Pro Tips" source="start_node" target="protips"/>
-    <edge id="Link Pro Tips to Movement" source="protips" target="protip_01_movement"/>
-    <edge id="Link Pro Tips to Machinery" source="protips" target="protip_02_machinery"/>
-    <edge id="Link Pro Tips to Vehicles" source="protips" target="protip_03_vehicles"/>
+      <edge id="Link Pro Tips to Movement" source="protips" target="protip_01_movement"/>
+
+      <edge id="Link Pro Tips to Machinery" source="protips" target="protip_02_machinery"/>
+        <edge id="Link Sorters to Machinery" source="protip_02_machinery_01_sorters" target="protip_02_machinery"/>
+
+      <edge id="Link Pro Tips to Vehicles" source="protips" target="protip_03_vehicles"/>
 
     <edge id="Link Start to Builds" source="start_node" target="builds"/>
-    <edge id="Link MVP Drill Rover to Builds" source="build_00_MVPRover" target="builds"/> 
-    <edge id="Link Ant-Tony to Builds" source="build_01_Ant-Tony" target="builds"/>
-    <edge id="Link Rhino to Ant-Tony" source="build_02_Rhino" target="build_01_Ant-Tony"/>
-    <edge id="Link Hippo to Builds" source="build_03_Hippo" target="builds"/>
-    <edge id="Link Super Hippo to Hippo" source="build_04_SuperHippo" target="build_03_Hippo"/>
+
+    <edge id="Link Rovers to Builds" source="builds_rovers" target="builds"/> 
+      <edge id="Link MVP Drill Rover to Rover" source="build_00_MVPRover" target="builds_rovers"/> 
+  
+      <edge id="Link Ant-Tony to Rovers" source="build_01_Ant-Tony" target="builds_rovers"/>
+        <edge id="Link Rhino to Ant-Tony" source="build_02_Rhino" target="build_01_Ant-Tony"/>
+  
+      <edge id="Link Hippo to Builds" source="build_03_Hippo" target="builds_rovers"/>
+        <edge id="Link Super Hippo to Hippo" source="build_04_SuperHippo" target="build_03_Hippo"/>
      
-
-
+      <edge id="Link Truffle Hog to Builds" source="build_05_TruffleHog" target="builds_rovers"/>
+        <edge id="Link Super Truffle Hog to Truffle Hog" source="build_06_SuperTruffleHog" target="build_05_TruffleHog"/>
 
   </graph>
 </graphml>
