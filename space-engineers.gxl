@@ -42,6 +42,23 @@
       ]]></data>
     </node>
 
+    <node id="strategy_02_JetpackFastTech">
+      <data key="nameNode">Jetpack Fast Tech</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>Start: Earth-like</li>
+<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out.</li>
+<li>The focus here is to leverage the 100 m/s speed of a jetpack to fly around to discover.</li>
+<li>Leverage the H2/O2 Generator + the fuel tank to maximize total travel distance.</li>
+<li></li>
+<li>NOTE: the 'fastest' search algorithm is a spiral pattern from a focal point</li>
+<li>Thus, from a starting base move outward in 25m-growing circles</li>
+</ul>        
+      ]]></data>
+    </node>
+
+
+
     <node id="build_00_MVPRover">
       <data key="nameNode">Minimum Viable Product - Drill Rover</data>
       <data key="descriptionNode"><![CDATA[
@@ -183,6 +200,7 @@
   <!-- Edges -->
     <edge id="Link Start to Strategies" source="start_node" target="strategies"/> 
     <edge id="Link Sunken Ship to Strategies" source="strategy_01_sunken" target="strategies"/> 
+    <edge id="Link Jetpack Fast Tech to Strategies" source="strategy_02_JetpackFastTech" target="strategies"/> 
 
     <edge id="Link Start to Pro Tips" source="start_node" target="protips"/>
       <edge id="Link Pro Tips to Movement" source="protips" target="protip_01_movement"/>

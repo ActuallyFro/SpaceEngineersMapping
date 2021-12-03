@@ -29,6 +29,11 @@
             "target": "strategy_01_sunken"
         },
         {
+            "id": "Link Jetpack Fast Tech to Strategies",
+            "source": "strategies",
+            "target": "strategy_02_JetpackFastTech"
+        },
+        {
             "id": "Link MVP Drill Rover to Rover",
             "source": "build_00_MVPRover",
             "target": "builds_rovers"
@@ -93,21 +98,27 @@
     "nodes": [
         {
             "description": "\n        <br>\n        My Playthrough\n      ",
-            "group": 0,
+            "group": 1,
             "id": "start_node",
             "name": "Space Engineers"
         },
         {
             "description": "\n        <br>\n        My Playthrough\n      ",
-            "group": 0,
+            "group": 1,
             "id": "strategies",
             "name": "Strategies"
         },
         {
             "description": "\n<ul>\n<li>Start: Earth-like</li>\n<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>\n<li>Go to your drop</li>\n<li></li>\n<li></li>\n<li></li>\n</ul>        \n      ",
-            "group": 0,
+            "group": 1,
             "id": "strategy_01_sunken",
             "name": "Sunken Ship"
+        },
+        {
+            "description": "\n<ul>\n<li>Start: Earth-like</li>\n<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out.</li>\n<li>The focus here is to leverage the 100 m/s speed of a jetpack to fly around to discover.</li>\n<li>Leverage the H2/O2 Generator + the fuel tank to maximize total travel distance.</li>\n<li></li>\n<li>NOTE: the 'fastest' search algorithm is a spiral pattern from a focal point</li>\n<li>Thus, from a starting base move outward in 25m-growing circles</li>\n</ul>        \n      ",
+            "group": 1,
+            "id": "strategy_02_JetpackFastTech",
+            "name": "Jetpack Fast Tech"
         },
         {
             "description": "\n<ul>\n<li>This rover is designed to be the SIMPLEST, buildable forward/back drill rover</li>\n<li>Main goal: be able to drill forward and back with a single drill</li>\n<li>Crtical limitation: The medium cargo container(s) greatly limits ability to collect ores for processing </li>\n<li></li>\n<li></li>\n</ul>        \n      ",
@@ -147,7 +158,7 @@
         },
         {
             "description": "\n        Some example builds\n      ",
-            "group": 0,
+            "group": 1,
             "id": "builds",
             "name": "Builds"
         },
@@ -159,13 +170,13 @@
         },
         {
             "description": "\n        6-wheeled, ore-detecting rover made from the spare parts of first drop ship.\n      ",
-            "group": 1,
+            "group": 2,
             "id": "build_01_Ant-Tony",
             "name": "Ant-Tony"
         },
         {
             "description": "\n        6-wheeled, ore-detecting and drill rover made from the spare parts of first drop ship.\n      ",
-            "group": 1,
+            "group": 2,
             "id": "build_02_Rhino",
             "name": "Rhino"
         },
@@ -183,13 +194,13 @@
         },
         {
             "description": "\n        <ul>\n        <li>a 6-wheel Rover</li>\n        <li>Leverages the \"rotor bug\" (i.e., attach a LARGE GRID Ore Detector to a Small Grid)</li>\n        <li></li>\n        <li>Add a connector to enable towing by Ant-Tony or Hippo Class Vehicles</li>\n        </ul>        \n      ",
-            "group": 2,
+            "group": 0,
             "id": "build_05_TruffleHog",
             "name": "Truffle Hog"
         },
         {
             "description": "\n        <ul>\n        <li>An 8-wheel variant</li>\n        <li>Adds a survival kit</li>\n        <li>+a SECOND Large Cargo Container</li>\n        </ul>\n        <br>\n        This design can be built first up to the 6-wheel portion (i.e., with a projector), then be a simple mod to extend the default Truffle Hog design\n      ",
-            "group": 2,
+            "group": 0,
             "id": "build_06_SuperTruffleHog",
             "name": "Super Truffle Hog"
         }
