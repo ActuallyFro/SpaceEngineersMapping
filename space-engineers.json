@@ -122,7 +122,7 @@
         },
         {
             "description": "\n<ul>\n<li>This rover is designed to be the SIMPLEST, buildable forward/back drill rover</li>\n<li>Main goal: be able to drill forward and back with a single drill</li>\n<li>Crtical limitation: The medium cargo container(s) greatly limits ability to collect ores for processing </li>\n<li></li>\n<li></li>\n</ul>        \n      ",
-            "group": 2,
+            "group": 0,
             "id": "build_00_MVPRover",
             "name": "Minimum Viable Product - Drill Rover"
         },
@@ -133,25 +133,25 @@
             "name": "Pro Tips"
         },
         {
-            "description": "\n<ul>\n<li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>\n<li></li>\n<li></li>\n</ul>        \n      ",
+            "description": "\n<ul>\n<li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>\n<li>Middle Mouse Button: will add hovered item to the build list</li>\n<li>When building: hold alt + mouse wheel to \"zoom in and out\"</li>\n<li>Mario-toe, bridge building can be dones IF at least two blocks high....</li>\n</ul>        \n      ",
             "group": 3,
             "id": "protip_01_movement",
             "name": "Movement"
         },
         {
-            "description": "\n<ul>\n<li>Start: Earth-like</li>\n<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>\n<li>Go to your drop</li>\n<li></li>\n<li></li>\n<li></li>\n</ul>        \n      ",
+            "description": "\n<ul>\n<li>Start: Earth-like</li>\n<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>\n<li>Go to your drop</li>\n<li></li>\n<li>IF a hydrogen engine is NOT fueling, then turn rover/ship/etc. off then on</li>\n<li>Thrusters' exhaust cone is as long as the jet housing, and will ONLY effect the block where the nossle is pointed</li>\n<li>Hydrogen gas flows like energy, but can get stuck with routing (e.g., small grid, small cargos)</li>\n<li>Hydrogen tanks can be marked for storage only, so a connector does NOT leach it's tank back to a base</li>\n<li>Sorters should be TURNED OFF when hooking connectors together (EXPLOSIONS HAVE occured!)</li>\n</ul>\n      ",
             "group": 3,
             "id": "protip_02_machinery",
             "name": "Machinery"
         },
         {
-            "description": "\n<ul>\n<li>Attaching to a conveyor system, BEFORE a connector, with \"Drain All\" (applicable items + whitelist) will quickly empty a vehicle</li>\n</ul>        \n      ",
+            "description": "\n<ul>\n<li>Attaching to a conveyor system, BEFORE a connector, with \"Drain All\" (applicable items + whitelist) will quickly empty a vehicle</li>\n<li>Blacklist, with nothing, and drain all will steal EVERYTHING</li>\n<li>Consider using them to constantly push/pull production items (e.g. refinery ores|igots); flow parts in, and constructed items out to a large cargo</li>\n</ul>\n      ",
             "group": 3,
             "id": "protip_02_machinery_01_sorters",
             "name": "Sorters"
         },
         {
-            "description": "\n<ul>\n<li>NEVER use 1x1 for \"real\" vehicles</li>\n<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips) [50 grids!]</li>\n<li>Consider \"side spikes\" (e.g., place two ramps back to back, beyond width of tires, to force rolling)</li>\n<li></li>\n<li>Control+G will put you into build mode (e.g., you can place/build INSIDE a vehicle, a welder can then construct the object)</li>\n</ul>        \n      ",
+            "description": "\n<ul>\n<li>NEVER use 1x1 for \"real\" vehicles</li>\n<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips)</li>\n<li>Consider \"side spikes\" (e.g., place two ramps back to back, beyond width of tires, to force rolling)</li>\n<li>Add a projector that blueprints your current vehicle for quick fixes</li>\n<li>Control+G will put you into build mode (e.g., you can place/build INSIDE a vehicle, a welder can then construct the object)</li>\n<li>DON'T try to merge two grids connected by the same (advanced) rotors pieces, it GOES CRAZY</li>\n<li>Place blocks/tools/items into a saved|named group -- when the part (e.g., hinge) dies it normally would remove it from the hotbar|shortcuts area, BUT if you restore the group it will renable to shortcut (so you DO NOT have to remap hinges or cameras)</li>\n</ul> \n      ",
             "group": 3,
             "id": "protip_03_vehicles",
             "name": "Vehicles"
@@ -164,19 +164,19 @@
         },
         {
             "description": "\n      For all things with wheels!\n      ",
-            "group": 2,
+            "group": 0,
             "id": "builds_rovers",
             "name": "Rovers"
         },
         {
             "description": "\n        6-wheeled, ore-detecting rover made from the spare parts of first drop ship.\n      ",
-            "group": 2,
+            "group": 0,
             "id": "build_01_Ant-Tony",
             "name": "Ant-Tony"
         },
         {
             "description": "\n        6-wheeled, ore-detecting and drill rover made from the spare parts of first drop ship.\n      ",
-            "group": 2,
+            "group": 0,
             "id": "build_02_Rhino",
             "name": "Rhino"
         },

@@ -86,8 +86,9 @@
       <data key="descriptionNode"><![CDATA[
 <ul>
 <li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>
-<li></li>
-<li></li>
+<li>Middle Mouse Button: will add hovered item to the build list</li>
+<li>When building: hold alt + mouse wheel to "zoom in and out"</li>
+<li>Mario-toe, bridge building can be dones IF at least two blocks high....</li>
 </ul>        
       ]]></data>
     </node>
@@ -100,9 +101,12 @@
 <li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>
 <li>Go to your drop</li>
 <li></li>
-<li></li>
-<li></li>
-</ul>        
+<li>IF a hydrogen engine is NOT fueling, then turn rover/ship/etc. off then on</li>
+<li>Thrusters' exhaust cone is as long as the jet housing, and will ONLY effect the block where the nossle is pointed</li>
+<li>Hydrogen gas flows like energy, but can get stuck with routing (e.g., small grid, small cargos)</li>
+<li>Hydrogen tanks can be marked for storage only, so a connector does NOT leach it's tank back to a base</li>
+<li>Sorters should be TURNED OFF when hooking connectors together (EXPLOSIONS HAVE occured!)</li>
+</ul>
       ]]></data>
     </node>
 
@@ -111,7 +115,9 @@
       <data key="descriptionNode"><![CDATA[
 <ul>
 <li>Attaching to a conveyor system, BEFORE a connector, with "Drain All" (applicable items + whitelist) will quickly empty a vehicle</li>
-</ul>        
+<li>Blacklist, with nothing, and drain all will steal EVERYTHING</li>
+<li>Consider using them to constantly push/pull production items (e.g. refinery ores|igots); flow parts in, and constructed items out to a large cargo</li>
+</ul>
       ]]></data>
     </node>
 
@@ -121,11 +127,13 @@
       <data key="descriptionNode"><![CDATA[
 <ul>
 <li>NEVER use 1x1 for "real" vehicles</li>
-<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips) [50 grids!]</li>
+<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips)</li>
 <li>Consider "side spikes" (e.g., place two ramps back to back, beyond width of tires, to force rolling)</li>
-<li></li>
+<li>Add a projector that blueprints your current vehicle for quick fixes</li>
 <li>Control+G will put you into build mode (e.g., you can place/build INSIDE a vehicle, a welder can then construct the object)</li>
-</ul>        
+<li>DON'T try to merge two grids connected by the same (advanced) rotors pieces, it GOES CRAZY</li>
+<li>Place blocks/tools/items into a saved|named group -- when the part (e.g., hinge) dies it normally would remove it from the hotbar|shortcuts area, BUT if you restore the group it will renable to shortcut (so you DO NOT have to remap hinges or cameras)</li>
+</ul> 
       ]]></data>
     </node>
 
