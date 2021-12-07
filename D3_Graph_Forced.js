@@ -8,8 +8,8 @@ function DrawGraph(name_of_json){
   document.getElementById("div_tooltip").innerHTML = "";
 
   
-  var w = window.innerWidth*1.0,
-      h = window.innerHeight*0.66;
+  var w = window.innerWidth*0.66,
+      h = window.innerHeight*0.49;
 
   var vis = d3.select("#GraphArea").append("svg:svg").attr("width", w).attr("height", h);
 
@@ -64,7 +64,7 @@ function DrawGraph(name_of_json){
     }
 
     var mousemove = function(d) {
-      Tooltip.html("Decription:" + d.description).style("left", (d3.mouse(this)[0]+70) + "px").style("top", (d3.mouse(this)[1]) + "px")
+      Tooltip.html("Description:" + d.description).style("left", (d3.mouse(this)[0]+70) + "px").style("top", (d3.mouse(this)[1]) + "px")
     }
 
     var mouseleave = function(d) {
@@ -79,11 +79,13 @@ function DrawGraph(name_of_json){
     var force = self.force = d3.layout.force()
       .nodes(json.nodes)
       .links(json.links)
-      .gravity(.05)
-      .distance(100)
-      .charge(-100)
+      .distance(60)
+      .charge(-325)
       .size([w, h])
       .start();
+
+      // .gravity(.25)
+
 
     var link = vis.selectAll("line.link")
       .data(json.links)
@@ -150,10 +152,10 @@ function DrawGraph(name_of_json){
 
         return IconLink;
       })
-      .attr("x", "-20px")
-      .attr("y", "-20px")
-      .attr("width", "40px")
-      .attr("height", "40px")
+      .attr("x", "-15px")
+      .attr("y", "-15px")
+      .attr("width", "30px")
+      .attr("height", "30px")
       .on("mouseover", mouseover)     //|Tool tip check on hover/etc.
       .on("mousemove", mousemove)     //|
       .on("mouseleave", mouseleave);  //|
