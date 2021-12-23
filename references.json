@@ -28,6 +28,21 @@
       "IconLink":"https://www.spaceengineerswiki.com/images/d/d7/Wheel_Suspension_3x3_Icon.png"
     },
     {
+      "name":"Rovers",
+      "category":"strategy",
+      "IconLink":"https://www.spaceengineerswiki.com/images/d/d7/Wheel_Suspension_3x3_Icon.png"
+    },
+    {
+      "name":"Sorters",
+      "category":"sorters",
+      "IconLink":"https://www.spaceengineerswiki.com/images/2/23/Conveyor_Sorter_Icon.png"
+    },
+    {
+      "name":"Jetpack Fast Tech",
+      "category":"jetpack",
+      "IconLink":"https://cdn1.iconfinder.com/data/icons/materia-transport-vol-3/24/014_104_jetpack_fly_space_aero-128.png"
+    },
+    {
       "name":"Pro Tips",
       "category":"protips",
       "IconLink":"https://www.spaceengineerswiki.com/images/e/ee/Handbreak.png"

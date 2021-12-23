@@ -18,13 +18,7 @@
       ]]></data>
     </node>
 
-    <node id="protips">
-      <data key="nameNode">Pro Tips</data>
-      <data key="descriptionNode"><![CDATA[
-        <br>
-        This captures some could to knows...
-      ]]></data>
-    </node>
+<!-- Strategies -->
 
     <node id="strategies">
       <data key="nameNode">Strategies</data>
@@ -33,7 +27,6 @@
         My Playthrough
       ]]></data>
     </node>
-
 
     <node id="strategy_01_sunken">
       <data key="nameNode">Sunken Ship</data>
@@ -49,16 +42,42 @@
       ]]></data>
     </node>
 
-    <node id="strategy_02_MVPRover">
+    <node id="strategy_02_JetpackFastTech">
+      <data key="nameNode">Jetpack Fast Tech</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>Start: Earth-like</li>
+<li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out.</li>
+<li>The focus here is to leverage the 100 m/s speed of a jetpack to fly around to discover.</li>
+<li>Leverage the H2/O2 Generator + the fuel tank to maximize total travel distance.</li>
+<li></li>
+<li>NOTE: the 'fastest' search algorithm is a spiral pattern from a focal point</li>
+<li>Thus, from a starting base move outward in 25m-growing circles</li>
+</ul>        
+      ]]></data>
+    </node>
+
+
+
+    <node id="build_00_MVPRover">
       <data key="nameNode">Minimum Viable Product - Drill Rover</data>
       <data key="descriptionNode"><![CDATA[
 <ul>
 <li>This rover is designed to be the SIMPLEST, buildable forward/back drill rover</li>
 <li>Main goal: be able to drill forward and back with a single drill</li>
-<li></li>
+<li>Crtical limitation: The medium cargo container(s) greatly limits ability to collect ores for processing </li>
 <li></li>
 <li></li>
 </ul>        
+      ]]></data>
+    </node>
+
+<!-- Protips -->
+    <node id="protips">
+      <data key="nameNode">Pro Tips</data>
+      <data key="descriptionNode"><![CDATA[
+        <br>
+        These are general tips to consider when playing.
       ]]></data>
     </node>
 
@@ -67,8 +86,9 @@
       <data key="descriptionNode"><![CDATA[
 <ul>
 <li>Jet Pack [X]: IF Upside down, then tap it (1 off-1 on) until you right yourself</li>
-<li></li>
-<li></li>
+<li>Middle Mouse Button: will add hovered item to the build list</li>
+<li>When building: hold alt + mouse wheel to "zoom in and out"</li>
+<li>Mario-toe, bridge building can be dones IF at least two blocks high....</li>
 </ul>        
       ]]></data>
     </node>
@@ -81,32 +101,136 @@
 <li>Want to be near body of water (jump out with F; start jet pack <x>; HOLD SPACE to FLY!; TAP on/off X to level out</li>
 <li>Go to your drop</li>
 <li></li>
-<li></li>
-<li></li>
-</ul>        
+<li>IF a hydrogen engine is NOT fueling, then turn rover/ship/etc. off then on</li>
+<li>Thrusters' exhaust cone is as long as the jet housing, and will ONLY effect the block where the nossle is pointed</li>
+<li>Hydrogen gas flows like energy, but can get stuck with routing (e.g., small grid, small cargos)</li>
+<li>Hydrogen tanks can be marked for storage only, so a connector does NOT leach it's tank back to a base</li>
+<li>Sorters should be TURNED OFF when hooking connectors together (EXPLOSIONS HAVE occured!)</li>
+</ul>
       ]]></data>
     </node>
+
+    <node id="protip_02_machinery_01_sorters">
+      <data key="nameNode">Sorters</data>
+      <data key="descriptionNode"><![CDATA[
+<ul>
+<li>Attaching to a conveyor system, BEFORE a connector, with "Drain All" (applicable items + whitelist) will quickly empty a vehicle</li>
+<li>Blacklist, with nothing, and drain all will steal EVERYTHING</li>
+<li>Consider using them to constantly push/pull production items (e.g. refinery ores|igots); flow parts in, and constructed items out to a large cargo</li>
+</ul>
+      ]]></data>
+    </node>
+
 
     <node id="protip_03_vehicles">
       <data key="nameNode">Vehicles</data>
       <data key="descriptionNode"><![CDATA[
 <ul>
 <li>NEVER use 1x1 for "real" vehicles</li>
-<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips) [50 grids!]</li>
-<li></li>
-</ul>        
+<li>Add Gyroscopes to have some ability to right-out a vehicle (if it flips)</li>
+<li>Consider "side spikes" (e.g., place two ramps back to back, beyond width of tires, to force rolling)</li>
+<li>Add a projector that blueprints your current vehicle for quick fixes</li>
+<li>Control+G will put you into build mode (e.g., you can place/build INSIDE a vehicle, a welder can then construct the object)</li>
+<li>DON'T try to merge two grids connected by the same (advanced) rotors pieces, it GOES CRAZY</li>
+<li>Place blocks/tools/items into a saved|named group -- when the part (e.g., hinge) dies it normally would remove it from the hotbar|shortcuts area, BUT if you restore the group it will renable to shortcut (so you DO NOT have to remap hinges or cameras)</li>
+</ul> 
       ]]></data>
     </node>
+
+<!-- BUILDS -->
+    <node id="builds">
+      <data key="nameNode">Builds</data>
+      <data key="descriptionNode"><![CDATA[
+        Some example builds
+      ]]></data>
+    </node>
+
+    <node id="builds_rovers">
+      <data key="nameNode">Rovers</data>
+      <data key="descriptionNode"><![CDATA[
+      For all things with wheels!
+      ]]></data>
+    </node>
+
+    <node id="build_01_Ant-Tony">
+      <data key="nameNode">Ant-Tony</data>
+      <data key="descriptionNode"><![CDATA[
+        6-wheeled, ore-detecting rover made from the spare parts of first drop ship.
+      ]]></data>
+    </node>
+
+    <node id="build_02_Rhino">
+      <data key="nameNode">Rhino</data>
+      <data key="descriptionNode"><![CDATA[
+        6-wheeled, ore-detecting and drill rover made from the spare parts of first drop ship.
+      ]]></data>
+    </node>
+
+    <node id="build_03_Hippo">
+      <data key="nameNode">Hippo</data>
+      <data key="descriptionNode"><![CDATA[
+        16-wheeled, ore-detecting rover made from the spare parts of first drop ship.
+      ]]></data>
+    </node>
+
+    <node id="build_04_SuperHippo">
+      <data key="nameNode">Super Hippo</data>
+      <data key="descriptionNode"><![CDATA[
+        16-wheeled, ore-detecting rover made from the spare parts of first drop ship.
+      ]]></data>
+    </node>
+
+    <node id="build_05_TruffleHog">
+      <data key="nameNode">Truffle Hog</data>
+      <data key="descriptionNode"><![CDATA[
+        <ul>
+        <li>a 6-wheel Rover</li>
+        <li>Leverages the "rotor bug" (i.e., attach a LARGE GRID Ore Detector to a Small Grid)</li>
+        <li></li>
+        <li>Add a connector to enable towing by Ant-Tony or Hippo Class Vehicles</li>
+        </ul>        
+      ]]></data>
+    </node>
+
+    <node id="build_06_SuperTruffleHog">
+      <data key="nameNode">Super Truffle Hog</data>
+      <data key="descriptionNode"><![CDATA[
+        <ul>
+        <li>An 8-wheel variant</li>
+        <li>Adds a survival kit</li>
+        <li>+a SECOND Large Cargo Container</li>
+        </ul>
+        <br>
+        This design can be built first up to the 6-wheel portion (i.e., with a projector), then be a simple mod to extend the default Truffle Hog design
+      ]]></data>
+    </node>
+
   <!-- Edges -->
     <edge id="Link Start to Strategies" source="start_node" target="strategies"/> 
     <edge id="Link Sunken Ship to Strategies" source="strategy_01_sunken" target="strategies"/> 
-    <edge id="Link MVP Drill Rover to Strategies" source="strategy_02_MVPRover" target="strategies"/> 
+    <edge id="Link Jetpack Fast Tech to Strategies" source="strategy_02_JetpackFastTech" target="strategies"/> 
+
     <edge id="Link Start to Pro Tips" source="start_node" target="protips"/>
-    <edge id="Link Pro Tips to Movement" source="protips" target="protip_01_movement"/>
-    <edge id="Link Pro Tips to Machinery" source="protips" target="protip_02_machinery"/>
-    <edge id="Link Pro Tips to Vehicles" source="protips" target="protip_03_vehicles"/>
+      <edge id="Link Pro Tips to Movement" source="protips" target="protip_01_movement"/>
 
+      <edge id="Link Pro Tips to Machinery" source="protips" target="protip_02_machinery"/>
+        <edge id="Link Sorters to Machinery" source="protip_02_machinery_01_sorters" target="protip_02_machinery"/>
 
+      <edge id="Link Pro Tips to Vehicles" source="protips" target="protip_03_vehicles"/>
+
+    <edge id="Link Start to Builds" source="start_node" target="builds"/>
+
+    <edge id="Link Rovers to Builds" source="builds_rovers" target="builds"/> 
+      <edge id="Link MVP Drill Rover to Rover" source="build_00_MVPRover" target="builds_rovers"/> 
+  
+      <edge id="Link Ant-Tony to Rovers" source="build_01_Ant-Tony" target="builds_rovers"/>
+        <edge id="Link Rhino to Ant-Tony" source="build_02_Rhino" target="build_01_Ant-Tony"/>
+  
+      <edge id="Link Hippo to Builds" source="build_03_Hippo" target="builds_rovers"/>
+        <edge id="Link Super Hippo to Hippo" source="build_04_SuperHippo" target="build_03_Hippo"/>
+     
+      <edge id="Link Truffle Hog to Builds" source="build_05_TruffleHog" target="builds_rovers"/>
+        <edge id="Link Super Truffle Hog to Truffle Hog" source="build_06_SuperTruffleHog" target="build_05_TruffleHog"/>
 
   </graph>
 </graphml>
